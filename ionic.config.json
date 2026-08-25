@@ -1,0 +1,7 @@
+{
+  "name": "StudentX Beta",
+  "type": "vue-vite",
+  "integrations": {
+    "capacitor": {}
+  }
+}

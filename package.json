@@ -1,0 +1,34 @@
+{
+  "name": "studentx-beta",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --configLoader runner",
+    "build": "vue-tsc --noEmit && vite build --configLoader runner",
+    "preview": "vite preview --host 127.0.0.1 --configLoader runner",
+    "mobile:sync": "npm run build && npx cap sync",
+    "mobile:add:android": "npx cap add android",
+    "mobile:open:android": "npx cap open android",
+    "mobile:run:android": "npm run build && npx cap run android",
+    "mobile:add:ios": "npx cap add ios",
+    "mobile:open:ios": "npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/ios": "^8.5.0",
+    "@ionic/vue": "^9.0.0",
+    "@ionic/vue-router": "^9.0.0",
+    "ionicons": "^8.1.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vue-tsc": "^2.2.0"
+  }
+}
