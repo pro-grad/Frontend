@@ -1,15 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#d9efef" />
-    <title>StudentX Beta</title>
-  </head>
-  <body>
-	  <div>
-		  <p>PROGRAD </p>
-		  <a href="https://119b21a3.prograd-frontend1.pages.dev/">Test#001</a>
-	  </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pro-Grad — Launching February 1, 2026</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --ink: #0a0a0a;
+      --paper: #fbfaf8;
+      --muted: #6b6860;
+      --line: #ddd9d1;
+      --green: #23573c;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --ink: #fbfaf8;
+        --paper: #0a0a0a;
+        --muted: #9a978d;
+        --line: #2a2925;
+        --green: #6fcf9a;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --ink: #fbfaf8;
+      --paper: #0a0a0a;
+      --muted: #9a978d;
+      --line: #2a2925;
+      --green: #6fcf9a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "IBM Plex Sans", Arial, sans-serif;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 24px;
+    }
+
+    main {
+      text-align: center;
+      max-width: 420px;
+    }
+
+    .logo {
+      width: 56px;
+      height: 56px;
+      display: block;
+      margin: 0 auto 28px;
+      object-fit: contain;
+    }
+
+    h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 600;
+      font-size: clamp(1.7rem, 5vw, 2.2rem);
+      letter-spacing: -0.01em;
+      margin: 0 0 14px;
+    }
+
+    p.date {
+      font-size: 1.05rem;
+      color: var(--ink);
+      font-weight: 500;
+      margin: 0 0 6px;
+    }
+
+    p.sub {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      width: 48px;
+      margin: 26px auto;
+    }
+  </style>
+
+</head>
+
+<body>
+  <main>
+
+```
+<img
+  class="logo"
+  src="logo.png"
+  alt="Pro-Grad"
+>
+
+<h1>Welcome to Pro-Grad</h1>
+
+<hr>
+
+<p class="date">Launching February 1, 2026</p>
+
+<p class="sub">
+  We're getting things ready. Check back soon.
+</p>
+```
+
+  </main>
 </body>
 </html>
